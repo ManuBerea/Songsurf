@@ -149,9 +149,7 @@ public class MainActivity extends AppCompatActivity {
             dislikeButtonLabel.setVisibility(View.VISIBLE);
 
             isRecommendedButtonClicked = true;
-//            for (int i = 0; i <= BUFFER_SIZE; i++) {
-                fetchAndQueueSong();
-//            }
+            fetchAndQueueSong();
         });
 
         likeButton.setOnClickListener(v -> {
@@ -234,9 +232,7 @@ public class MainActivity extends AppCompatActivity {
     private void addSongToQueues(Song song) {
         songsQueue.add(song);
         songs.add(song);
-//        if (songs.size() > BUFFER_SIZE) { // if the queue is full, remove the oldest song from the queue because it's not needed anymore (it has already been played)
-//            songs.remove(0); // remove the oldest song from the list of songs that have been played so far
-//        }
+        
         if (songs.size() == 1) {
             playNextSong();
         }
