@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".ui.FilterActivity">
+
+    <TextView
+        android:id="@+id/genreFilterTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/select_a_genre_to_filter_songs"
+        android:textSize="18sp" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/genreChipGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/genreFilterTextView"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp">
+        <!-- Chips will be added dynamically -->
+    </com.google.android.material.chip.ChipGroup>
+
+    <TextView
+        android:id="@+id/languageFilterTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/genreChipGroup"
+        android:padding="10dp"
+
+        android:text="@string/select_a_language_to_filter_songs"
+        android:textSize="18sp" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/languageChipGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/languageFilterTextView"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp">
+        <!-- Chips will be added dynamically -->
+    </com.google.android.material.chip.ChipGroup>
+
+    <TextView
+        android:id="@+id/yearFilterTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/languageChipGroup"
+        android:layout_alignParentStart="true"
+        android:padding="10dp"
+        android:text="@string/select_a_year_to_filter_songs"
+        android:textSize="18sp" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/yearChipGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yearFilterTextView"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp">
+        <!-- Chips will be added dynamically -->
+    </com.google.android.material.chip.ChipGroup>
+
+    <Button
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:id="@+id/button_apply_filters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yearChipGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:textSize="15sp"
+        android:text="@string/apply_filters"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="false"
+        android:background="@drawable/rounded_button"
+        android:onClick="applyFilters"/>
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@+id/button_apply_filters"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp" />
+
+</RelativeLayout>

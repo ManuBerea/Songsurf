@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="75dp">
+
+    <ImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="75dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:contentDescription="@string/thumbnail" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/thumbnail"
+        android:fontFamily="@font/poppinsbold"
+        android:text="@string/playlist_name"
+        android:textColor="#A3292929"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/song_count"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_below="@+id/name"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="5dp"
+        android:textSize="11sp"
+        android:layout_toEndOf="@+id/thumbnail"
+        android:text="@string/_10_songs"
+        android:fontFamily="@font/poppinsbold"
+        android:textColor="#B4AAAAAA" />
+
+</RelativeLayout>

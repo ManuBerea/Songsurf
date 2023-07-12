@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_songsurf"
+        android:icon="@drawable/ic_songsurf"
+        android:title="@string/songsurf"
+        android:fontFamily="@font/poppinsmedium" />
+
+    <item
+        android:id="@+id/navigation_playlists"
+        android:icon="@drawable/ic_playlists"
+        android:title="@string/my_playlists"
+        android:fontFamily="@font/poppinsmedium" />
+
+    <item
+        android:id="@+id/navigation_more"
+        android:icon="@drawable/ic_my_account"
+        android:title="@string/my_account_nav"
+        android:fontFamily="@font/poppinsmedium" />
+</menu>

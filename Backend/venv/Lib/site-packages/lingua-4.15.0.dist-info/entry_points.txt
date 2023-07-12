@@ -1,0 +1,11 @@
+[console_scripts]
+polint=lingua.polint:main
+pot-create=lingua.extract:main
+
+[lingua.extractors]
+chameleon=lingua.extractors.xml:ChameleonExtractor
+python=lingua.extractors.python:PythonExtractor
+xml=lingua.extractors.xml:ChameleonExtractor
+zcml=lingua.extractors.zcml:ZCMLExtractor
+zope=lingua.extractors.xml:ZopeExtractor
+

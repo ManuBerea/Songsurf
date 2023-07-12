@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/thumbnail"
+            />
+
+        <View
+            android:id="@+id/overlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/overlay"
+            />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="15dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/playlist_name"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/poppinsbold"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/song_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:padding="15dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/_10_songs"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/poppinsbold"
+        android:textSize="10sp"
+        tools:ignore="SmallSp" />
+
+</RelativeLayout>
